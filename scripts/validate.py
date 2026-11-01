@@ -10,12 +10,12 @@ import sys
 from urllib.parse import unquote, urlsplit
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / 'skills' / 'daxable-marketing-search'
+SKILL = ROOT / 'skills' / 'dax-reach'
 
 
 def validate(root=ROOT):
     errors, warnings = [], []
-    skill = root / 'skills' / 'daxable-marketing-search'
+    skill = root / 'skills' / 'dax-reach'
     text = (skill / 'SKILL.md').read_text()
     frontmatter = re.match(r'\A---\n(.*?)\n---\n', text, re.S)
     if not frontmatter:
@@ -64,6 +64,11 @@ def validate(root=ROOT):
     for archive, installed in licenses:
         if (root / 'upstream' / archive / 'LICENSE').read_bytes() != (skill / 'licenses' / installed).read_bytes():
             errors.append('License notice changed: ' + installed)
+    for original, installed in [('pbakaus--impeccable/LICENSE', 'impeccable-Apache-2.0.txt'),
+                                ('pbakaus--impeccable/NOTICE.md', 'impeccable-NOTICE.txt'),
+                                ('adr--madr/LICENSE.MIT', 'madr-MIT.txt')]:
+        if (root / 'upstream' / original).read_bytes() != (skill / 'licenses' / installed).read_bytes():
+            errors.append('License notice changed: ' + installed)
     sources = json.loads((skill / 'references/sources.json').read_text())
     ids = [item['id'] for item in sources['sources']]
     if len(ids) != len(set(ids)):
@@ -85,7 +90,51 @@ def validate(root=ROOT):
     for path in skill.rglob('*'):
         if path.is_symlink():
             errors.append('Symlink in active package: ' + str(path))
+    errors.extend(validate_knowledge(skill / 'references'))
     return errors, warnings
+
+
+def validate_knowledge(bundle):
+    """Validate our authored JSON-value YAML subset, not arbitrary third-party OKF."""
+    errors = []
+    for path in bundle.rglob('*.md'):
+        text = path.read_text(encoding='utf-8')
+        if path.name == 'log.md':
+            dates = re.findall(r'^## (.+)$', text, re.M)
+            try:
+                if not dates or dates != sorted(dates, reverse=True):
+                    raise ValueError('missing/unordered dates')
+                for value in dates:
+                    date.fromisoformat(value)
+                if text.startswith('---'):
+                    raise ValueError('frontmatter on log')
+            except ValueError:
+                errors.append('Invalid OKF log: ' + path.name)
+            continue
+        header = re.match(r'\A---\n(.*?)\n---\n', text, re.S)
+        try:
+            if not header:
+                raise ValueError('missing frontmatter')
+            metadata = {}
+            for line in header[1].splitlines():
+                key, value = line.split(': ', 1)
+                if key in metadata:
+                    raise ValueError('duplicate field')
+                metadata[key] = json.loads(value)
+            if path.name == 'index.md':
+                if path.parent != bundle or metadata != {'okf_version': '0.2'}:
+                    raise ValueError('invalid root index metadata')
+                if not re.search(r'^- \[.+\]\(.+\)', text, re.M):
+                    raise ValueError('missing index entries')
+            else:
+                if not isinstance(metadata.get('type'), str) or not metadata['type'].strip():
+                    raise ValueError('missing type')
+                for source in metadata.get('sources', []):
+                    if not isinstance(source.get('resource'), str) or not source['resource']:
+                        raise ValueError('missing source resource')
+        except (ValueError, TypeError, AttributeError):
+            errors.append('Invalid authored OKF metadata: ' + path.name)
+    return errors
 
 
 if __name__ == '__main__':

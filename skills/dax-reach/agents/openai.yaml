@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dax Reach"
+  short_description: "Design, marketing, SEO, AI visibility and copy"
+  default_prompt: "Use $dax-reach to review this page for audience clarity, search visibility, and qualified conversions."

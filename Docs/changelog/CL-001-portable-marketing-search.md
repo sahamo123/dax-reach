@@ -10,7 +10,7 @@ Created a separate portable package combining selected Corey Haines marketing an
 
 | Files | Change |
 |---|---|
-| skills/daxable-marketing-search | Shared routing, eight workflows, source registry, context/finding templates, licensing, HTML evidence helper |
+| skills/dax-reach | Shared routing, eight workflows, source registry, context/finding templates, licensing, HTML evidence helper |
 | upstream and upstream.lock.json | Exact pinned source excerpts, licenses, Git blob and SHA-256 hashes |
 | scripts and tests | Dependency-free installer, validator, and meaningful isolation/evidence tests |
 | evals | Eight behavioral cases and comparative evaluation protocol |

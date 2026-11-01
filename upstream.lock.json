@@ -99,6 +99,96 @@
       "git_blob_sha": "b52a0745b06ed05c9e70487143a059a74e6288ab",
       "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/skills/seo-geo/SKILL.md",
       "sha256": "94f48c4b21bf5479572cfb02f3b77fc562047d6e0fcaab5f0138804c53759c6b"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "LICENSE",
+      "snapshot": "upstream/pbakaus--impeccable/LICENSE",
+      "git_blob_sha": "bb3f6d23b1f8025514a62a12b51b47d73e3c9aa9",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/LICENSE",
+      "sha256": "02bb8c3b4e70190e3986c0404ad2fd8d639b4f534252d82379cc1b502b6d1812"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "NOTICE.md",
+      "snapshot": "upstream/pbakaus--impeccable/NOTICE.md",
+      "git_blob_sha": "0468271c904ae334cfaf27da6f8df3d5f419a1f0",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/NOTICE.md",
+      "sha256": "c60a093c2845fd9fb82f9c6f742ece31f379f8190b535309d32d66c45ccffdcb"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "skill/reference/audit.md",
+      "snapshot": "upstream/pbakaus--impeccable/skill/reference/audit.md",
+      "git_blob_sha": "51bde6ce806816e74b7ba0d6f526040e05d9e086",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/skill/reference/audit.md",
+      "sha256": "6f2850794a8e74fd07ab9410104f99e3f20dee5490d5e82c98880852203341d0"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "skill/reference/animate.md",
+      "snapshot": "upstream/pbakaus--impeccable/skill/reference/animate.md",
+      "git_blob_sha": "f80ebd154cd0b51ac713f3a535ca9640a30ab966",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/skill/reference/animate.md",
+      "sha256": "59f38d50c799aa47ecd7288c69dce0245d8c3e3e2368b29499d583996b5030b3"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "skill/reference/layout.md",
+      "snapshot": "upstream/pbakaus--impeccable/skill/reference/layout.md",
+      "git_blob_sha": "4b9eadcb10bbcf3e4d8de84ebd0d86d90e804d4b",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/skill/reference/layout.md",
+      "sha256": "14ba132b6168bf0a7498f8c3fbbb41b73ff704da5dc3688fd842807446e54a05"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "skill/reference/typeset.md",
+      "snapshot": "upstream/pbakaus--impeccable/skill/reference/typeset.md",
+      "git_blob_sha": "b3aa293d11d9f55a42e59f45cc5371ac186797dd",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/skill/reference/typeset.md",
+      "sha256": "925720c1d610d2a08a6811001303f395e4b2c971ef3d2506fbce43b2a1303152"
+    },
+    {
+      "repository": "pbakaus/impeccable",
+      "commit": "4f956490f0056ae1ff5ea80372cf56e83c001d3c",
+      "path": "skill/reference/polish.md",
+      "snapshot": "upstream/pbakaus--impeccable/skill/reference/polish.md",
+      "git_blob_sha": "f2146990505863574e3c8298613a37d4c31ee73c",
+      "source_url": "https://github.com/pbakaus/impeccable/blob/4f956490f0056ae1ff5ea80372cf56e83c001d3c/skill/reference/polish.md",
+      "sha256": "c504e12ea076fd1a57b8c9ece79fbb532c54226b2b6298c5c62fa889ae1dd34d"
+    },
+    {
+      "repository": "adr/madr",
+      "commit": "ba75bb1b20d42af5746b246ad348c202419ae681",
+      "path": "LICENSE",
+      "snapshot": "upstream/adr--madr/LICENSE",
+      "git_blob_sha": "038b9e8d963514881cb8ae10646b7d02257aa64b",
+      "source_url": "https://github.com/adr/madr/blob/ba75bb1b20d42af5746b246ad348c202419ae681/LICENSE",
+      "sha256": "cb9c3a276eb7991be197e401ae38d035f0f0efae425c21f499393f51c9b29ffd"
+    },
+    {
+      "repository": "adr/madr",
+      "commit": "ba75bb1b20d42af5746b246ad348c202419ae681",
+      "path": "LICENSE.MIT",
+      "snapshot": "upstream/adr--madr/LICENSE.MIT",
+      "git_blob_sha": "b2103e65b5b74f27be7e809c530b89f163eeb73f",
+      "source_url": "https://github.com/adr/madr/blob/ba75bb1b20d42af5746b246ad348c202419ae681/LICENSE.MIT",
+      "sha256": "a2eef9f0961adab958f4cfa85f65c2864bab694620919cfda402382783bc0c8d"
+    },
+    {
+      "repository": "adr/madr",
+      "commit": "ba75bb1b20d42af5746b246ad348c202419ae681",
+      "path": "template/adr-template.md",
+      "snapshot": "upstream/adr--madr/template/adr-template.md",
+      "git_blob_sha": "3dea2440cae85e408bd281a1a5b14399f0d21b4a",
+      "source_url": "https://github.com/adr/madr/blob/ba75bb1b20d42af5746b246ad348c202419ae681/template/adr-template.md",
+      "sha256": "940d45674563e0a2c6e96b4741b2778b18fdf0d5df1f47cc2a27a841d1b5ea82"
     }
   ]
 }

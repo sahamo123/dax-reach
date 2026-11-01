@@ -32,6 +32,10 @@ def validate(root=ROOT):
     for path in root.rglob('*.md'):
         if any(part in ('.git', 'upstream', '__pycache__') for part in path.relative_to(root).parts):
             continue
+        # Raw model outputs contain example website links, not repository references.
+        # Authored docs linking to these artifacts are still checked below.
+        if path.is_relative_to(root / 'evals' / 'results'):
+            continue
         for target in re.findall(r'\[[^\]]*\]\(([^)]+)\)', path.read_text()):
             parsed = urlsplit(target)
             if parsed.scheme or not parsed.path:

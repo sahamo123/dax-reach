@@ -23,7 +23,7 @@ The local Codex validator rejects the optional Agent Skills compatibility field.
 
 ## Accomplished
 
-Eight active workflows, fifteen dated Google references, eleven pinned source/license snapshots, all three installation layouts, seventeen passing unit tests, two passing local validation paths, and three completed independent offline behavioral tasks with raw outputs.
+Eight active workflows, fifteen dated Google references, eleven pinned source/license snapshots, all three installation layouts, eighteen passing unit tests, two passing local validation paths, and three completed independent offline behavioral tasks with raw outputs.
 
 ## Next
 

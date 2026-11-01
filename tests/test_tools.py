@@ -134,6 +134,20 @@ class PackageTests(unittest.TestCase):
             self.assertTrue(any('SHA-256 mismatch' in error for error in errors))
             self.assertTrue(any('Git blob mismatch' in error for error in errors))
 
+    def test_artifact_links_do_not_hide_broken_active_references(self):
+        with tempfile.TemporaryDirectory() as path:
+            root = Path(path) / 'repository'
+            shutil.copytree(ROOT, root, ignore=shutil.ignore_patterns('.git', '__pycache__'))
+            result = root / 'evals/results/example.md'
+            result.parent.mkdir(exist_ok=True)
+            result.write_text('[Example website destination](/services/example/)')
+            errors, _ = validator.validate(root)
+            self.assertEqual(errors, [])
+            entry = root / 'skills/daxable-marketing-search/SKILL.md'
+            entry.write_text(entry.read_text() + '\n[Broken reference](absent.md)\n')
+            errors, _ = validator.validate(root)
+            self.assertTrue(any('absent.md' in error for error in errors))
+
 
 if __name__ == '__main__':
     unittest.main()

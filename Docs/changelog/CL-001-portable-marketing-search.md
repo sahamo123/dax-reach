@@ -27,4 +27,4 @@ Eight active workflows, fifteen dated Google references, eleven pinned source/li
 
 ## Next
 
-Complete GitHub CI verification. A full cross-model comparative benchmark and real website outcome measurements remain future evaluation work, not promised results.
+The private repository is delivered and GitHub CI run 41290296157 passed on implementation commit a2a8269. A full cross-model comparative benchmark and real website outcome measurements remain future evaluation work, not promised results. See [verification](../verification.md).

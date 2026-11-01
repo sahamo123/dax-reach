@@ -1,6 +1,6 @@
 # IP-001 — Portable Marketing and Search
 
-Status: Approved and executing. Created: 2026-11-01. Agent: Codex.
+Status: Delivered. Created: 2026-11-01. Agent: Codex.
 
 ## Goal
 
@@ -22,3 +22,9 @@ Deliver a separate private GitHub repository combining selected Corey Haines mar
 - Current Google changes have citations, dates, and review instructions.
 - Tests and untested platform/model combinations are reported separately.
 - Better organization and safeguards are demonstrated; SEO or conversion superiority is not claimed without outcome data.
+
+## Delivery
+
+Private repository: https://github.com/sahamo123/daxable-marketing-search-skills
+
+All implementation criteria completed. See [verification](../verification.md) for the 18 tests, independent offline tasks, CI result, and explicit runtime/benchmark limits.

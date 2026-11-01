@@ -16,9 +16,12 @@ Version: 0.1.0. Date: 2026-11-01. Agent: Codex.
 - Parent review found all three met their stated scope: preview noindex and local-only boundary retained; unsupported claims replaced with usable conservative copy; a complete article, fictional labeling, and the requested internal link were delivered. The article body count was independently confirmed as 250 whitespace-delimited words after removing Markdown link destinations.
 - [Raw outputs and reference report](../evals/results/2026-11-01-forward-test.md) are retained. This was a single offline run per task in this Codex agent session, using the inherited model configuration; a precise backend model identifier was not exposed in the test artifacts. It is not a blind comparative benchmark, native Claude test, or live SEO outcome test.
 
-## Pending delivery checks
+## GitHub delivery
 
-- GitHub CI will be checked after initial push.
+- Private repository created under the verified `sahamo123` account and pushed successfully: https://github.com/sahamo123/daxable-marketing-search-skills
+- Implementation commit `a2a8269aa4c803ac396f95db3974a2ef244edaf1`: [GitHub validation run 41290296157](https://github.com/sahamo123/daxable-marketing-search-skills/actions/runs/41290296157) completed successfully, including package validation and all 18 unit tests.
+- Bootstrap/first evidence-recording runs failed before completion: the workflow-only bootstrap lacked the package, and the initial link checker treated the article's website URL as a repository path. Both causes were resolved; the latter has a regression test. See [GP-001](gotchas-and-pitfalls/GP-001-bootstrap-and-artifact-validation.md).
+- No website deployment, global agent installation, paid API setup, or credentials were added.
 
 ## Limits
 

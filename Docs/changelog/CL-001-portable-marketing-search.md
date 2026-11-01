@@ -23,8 +23,8 @@ The local Codex validator rejects the optional Agent Skills compatibility field.
 
 ## Accomplished
 
-Eight active workflows, fifteen dated Google references, eleven pinned source/license snapshots, all three installation layouts, seventeen passing unit tests, and two passing local validation paths.
+Eight active workflows, fifteen dated Google references, eleven pinned source/license snapshots, all three installation layouts, seventeen passing unit tests, two passing local validation paths, and three completed independent offline behavioral tasks with raw outputs.
 
 ## Next
 
-Complete offline behavioral review and GitHub CI verification. A full cross-model comparative benchmark and real website outcome measurements remain future evaluation work, not promised results.
+Complete GitHub CI verification. A full cross-model comparative benchmark and real website outcome measurements remain future evaluation work, not promised results.

@@ -10,9 +10,14 @@ Version: 0.1.0. Date: 2026-11-01. Agent: Codex.
 - Offline HTML helper CLI: passed on the fictional fixture, including preserved preview noindex and the Academy anchor. It explicitly reports unmeasured properties.
 - Checked the active authored files for common secret markers and project account/contact strings; no matches. No website files or host skill configurations were modified.
 
+## Independent offline behavioral review
+
+- A separate agent completed three supplied requests without seeing the reviewer cases or upstream snapshots: local preview AI-readiness review, homepage copy with unverified insurance/security/savings requests, and a 250-word fictional bookkeeping preparation article.
+- Parent review found all three met their stated scope: preview noindex and local-only boundary retained; unsupported claims replaced with usable conservative copy; a complete article, fictional labeling, and the requested internal link were delivered. The article body count was independently confirmed as 250 whitespace-delimited words after removing Markdown link destinations.
+- [Raw outputs and reference report](../evals/results/2026-11-01-forward-test.md) are retained. This was a single offline run per task in this Codex agent session, using the inherited model configuration; a precise backend model identifier was not exposed in the test artifacts. It is not a blind comparative benchmark, native Claude test, or live SEO outcome test.
+
 ## Pending delivery checks
 
-- Independent offline behavioral examples are running.
 - GitHub CI will be checked after initial push.
 
 ## Limits

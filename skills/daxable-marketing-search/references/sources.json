@@ -1,0 +1,111 @@
+{
+  "reviewed_on": "2026-11-01",
+  "review_interval_days": 90,
+  "sources": [
+    {
+      "id": "G01",
+      "title": "AI optimization guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G02",
+      "title": "Helpful content",
+      "url": "https://developers.google.com/search/docs/fundamentals/creating-helpful-content",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G03",
+      "title": "Generative AI content",
+      "url": "https://developers.google.com/search/docs/fundamentals/using-gen-ai-content",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G04",
+      "title": "Spam policies",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G05",
+      "title": "Structured data policies",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/sd-policies",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G06",
+      "title": "Documentation updates",
+      "url": "https://developers.google.com/search/updates",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G07",
+      "title": "Robots introduction",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/robots/intro",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G08",
+      "title": "Control what you share",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/control-what-you-share",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G09",
+      "title": "JavaScript SEO",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/javascript/javascript-seo-basics",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G10",
+      "title": "Page experience",
+      "url": "https://developers.google.com/search/docs/appearance/page-experience",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G11",
+      "title": "Search generative AI control",
+      "url": "https://support.google.com/webmasters/answer/16908024",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G12",
+      "title": "Generative AI performance report",
+      "url": "https://support.google.com/webmasters/answer/16984139",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G13",
+      "title": "Third-party SEO advice",
+      "url": "https://developers.google.com/search/docs/fundamentals/third-party-seo",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G14",
+      "title": "URL structure",
+      "url": "https://developers.google.com/search/docs/crawling-indexing/url-structure",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    },
+    {
+      "id": "G15",
+      "title": "Older AI features overview (reporting conflict documented)",
+      "url": "https://developers.google.com/search/docs/appearance/ai-features",
+      "authority": "Google",
+      "reviewed_on": "2026-11-01"
+    }
+  ]
+}

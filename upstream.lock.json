@@ -1,0 +1,104 @@
+{
+  "reviewed_on": "2026-11-01",
+  "sources": [
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "LICENSE",
+      "snapshot": "upstream/coreyhaines31--marketingskills/LICENSE",
+      "git_blob_sha": "7c48dd638a9ebed49a8ef0c0c4eea90105381cdf",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/LICENSE",
+      "sha256": "b70d71e24e40fce5da8f4b6f9cd862096a048e433db7f3c8cac5e348e6d34591"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "skills/product-marketing/SKILL.md",
+      "snapshot": "upstream/coreyhaines31--marketingskills/skills/product-marketing/SKILL.md",
+      "git_blob_sha": "3af463a602aa0233c4d5fc98c23ba13224aa8f6b",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/skills/product-marketing/SKILL.md",
+      "sha256": "19ece0fa75c72a5a8b6e90db80f506586f54cc93bae6bffbb1bd2ef4ae7d603c"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "skills/content-strategy/SKILL.md",
+      "snapshot": "upstream/coreyhaines31--marketingskills/skills/content-strategy/SKILL.md",
+      "git_blob_sha": "0efc441269144abe5af37603291d860f47a52430",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/skills/content-strategy/SKILL.md",
+      "sha256": "5e74201646b8ae0b7ddfd2f4a4a14149096f490667b32bcb9e3a35e7326d88b0"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "skills/copywriting/SKILL.md",
+      "snapshot": "upstream/coreyhaines31--marketingskills/skills/copywriting/SKILL.md",
+      "git_blob_sha": "2453731ab7a5e52535b7cf29beccbebe687d5a62",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/skills/copywriting/SKILL.md",
+      "sha256": "02f0ab1ddd41d95b3c230d4bcff3de6578c8f2e45776c8ef2e4b931636af5bee"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "skills/cro/SKILL.md",
+      "snapshot": "upstream/coreyhaines31--marketingskills/skills/cro/SKILL.md",
+      "git_blob_sha": "2b0a5bb9aa17ed83ff111dbfe6ea722610828a29",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/skills/cro/SKILL.md",
+      "sha256": "6e172cc38178c800ff41ceb097f36c6a1db8035fb88a1fee53043f8ec38a6f35"
+    },
+    {
+      "repository": "coreyhaines31/marketingskills",
+      "commit": "88c79f6528a9347420e57ceb1fff9a60de651768",
+      "path": "skills/ai-seo/SKILL.md",
+      "snapshot": "upstream/coreyhaines31--marketingskills/skills/ai-seo/SKILL.md",
+      "git_blob_sha": "f07379d8aecae63311c62aadc158d9edf06c8fde",
+      "source_url": "https://github.com/coreyhaines31/marketingskills/blob/88c79f6528a9347420e57ceb1fff9a60de651768/skills/ai-seo/SKILL.md",
+      "sha256": "8e5532f13d069dc113316d3b18e26d98adc7e20a69b57b94d20d7e2a2f90c220"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "path": "LICENSE",
+      "snapshot": "upstream/AgriciDaniel--claude-seo/LICENSE",
+      "git_blob_sha": "94fac7465f1e76414fc59f9fd97cdfd2105e030d",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/LICENSE",
+      "sha256": "a42b3b0253cecea9af810c5207a67b0be8c9a0cfbf52b9302c3d26b063e7a86b"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "path": "skills/seo-technical/SKILL.md",
+      "snapshot": "upstream/AgriciDaniel--claude-seo/skills/seo-technical/SKILL.md",
+      "git_blob_sha": "2184128105f866eb04c10d3d2fcd50d079d41f03",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/skills/seo-technical/SKILL.md",
+      "sha256": "52b591511274158c11b40cdcbaaea3ef7fc36eb7caf740f46dfefed25ed290d9"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "path": "skills/seo-content/SKILL.md",
+      "snapshot": "upstream/AgriciDaniel--claude-seo/skills/seo-content/SKILL.md",
+      "git_blob_sha": "be86bd23b85c7bffa157bacd8761caa45157d94d",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/skills/seo-content/SKILL.md",
+      "sha256": "b167c03c9cde9b973aee4930b4eb6b7dc14b0f994b9a75d265a3864852d9f323"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "path": "skills/seo-schema/SKILL.md",
+      "snapshot": "upstream/AgriciDaniel--claude-seo/skills/seo-schema/SKILL.md",
+      "git_blob_sha": "ce2747efaa221516e4bca54587c510fae33f70ca",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/skills/seo-schema/SKILL.md",
+      "sha256": "8137d12b4f5aad3f5df4c3e16507f8650cd1c0ff3fd998b6be67d513e61e3719"
+    },
+    {
+      "repository": "AgriciDaniel/claude-seo",
+      "commit": "6be93f45064ffbadced572b5d5c95f55fd263af0",
+      "path": "skills/seo-geo/SKILL.md",
+      "snapshot": "upstream/AgriciDaniel--claude-seo/skills/seo-geo/SKILL.md",
+      "git_blob_sha": "b52a0745b06ed05c9e70487143a059a74e6288ab",
+      "source_url": "https://github.com/AgriciDaniel/claude-seo/blob/6be93f45064ffbadced572b5d5c95f55fd263af0/skills/seo-geo/SKILL.md",
+      "sha256": "94f48c4b21bf5479572cfb02f3b77fc562047d6e0fcaab5f0138804c53759c6b"
+    }
+  ]
+}

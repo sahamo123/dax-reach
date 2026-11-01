@@ -1,0 +1,4 @@
+interface:
+  display_name: "Daxable Marketing Search"
+  short_description: "Evidence-led marketing, SEO, AI visibility and copy"
+  default_prompt: "Use $daxable-marketing-search to review this page for audience clarity, search visibility, and qualified conversions."

@@ -25,6 +25,6 @@ Deliver a separate private GitHub repository combining selected Corey Haines mar
 
 ## Delivery
 
-Private repository: https://github.com/sahamo123/daxable-marketing-search-skills
+Private repository: https://github.com/sahamo123/dax-reach
 
 All implementation criteria completed. See [verification](../verification.md) for the 18 tests, independent offline tasks, CI result, and explicit runtime/benchmark limits.

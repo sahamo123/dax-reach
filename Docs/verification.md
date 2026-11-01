@@ -1,5 +1,33 @@
 # Verification Record
 
+Version: 0.2.0. Date: 2026-11-01. Agent: Codex.
+
+## Completed checks
+
+- Package/source validator passed: renamed skill, all local references, OKF authored metadata, 21 pinned source/license snapshots, and unchanged upstream license notices.
+- Unit/integration suite: **57 tests passed**. All 18 original checks remain, with adapted install assertions for the local profile and six destination choices. New coverage includes detection/prompts, service/product customization, cross-host/ancestor/user/plugin conflicts, duplicate vs overlap handling, private context exclusions, history scanning, OKF validation, backlink CSV/HTML evidence, and DataForSEO mocked transport/failure cases.
+- Skill Creator structural validator passed. `git diff --check` passed.
+- Public-release pattern scan passed for current files and all reachable historical blobs; matched values are never printed. Manual review checked generic authored content, upstream provenance, commit authors/messages, and repository metadata. The repository had no issues/PRs, releases, or uploaded Actions artifacts before this release; four prior completed workflow logs were checked with no sensitive-pattern findings.
+- No DataForSEO credential was read, stored, or requested. No paid API call, website change, global installation, or hook installation was performed.
+
+## Independent behavior check
+
+A separate agent used only the active skill, relevant references, and a fictional warehouse-software request. It delivered homepage copy, an implementable animation storyboard, a decision comparison, and real offline analysis of the three supplied CSV rows. Parent review confirmed two deduplicated pairs/two referring hostnames; unsupported accuracy claims were rejected; local scope, accessibility, and paid-call boundaries were retained. [Raw proposal and tool record](../evals/results/2026-11-01-dax-reach-forward-test.md) are preserved.
+
+This was one offline consumer task using the inherited agent configuration. It was not a blind upstream comparison, native-host runtime test, browser animation test, or measured SEO/conversion result. A precise backend model identifier was not exposed in the output.
+
+## Release verification
+
+Implementation is ready for reviewed GitHub delivery. Public repository visibility and final CI results are recorded after those actions complete.
+
+## Limits
+
+No native Claude, Antigravity, Cursor, or Grok session was launched. Tests verify installation layouts and CLI behavior, not every host's runtime. Conflict scans cover documented standard roots and supplied extra roots; custom remote/plugin locations require explicit inclusion. Privacy pattern checks do not prove the absence of arbitrary confidential prose. DataForSEO tests use mocks, so account entitlement and live response behavior remain unverified. No claim of better rankings, citations, or conversions is made.
+
+---
+
+# Version 0.1 Historical Verification
+
 Version: 0.1.0. Date: 2026-11-01. Agent: Codex.
 
 ## Completed local checks
@@ -18,8 +46,8 @@ Version: 0.1.0. Date: 2026-11-01. Agent: Codex.
 
 ## GitHub delivery
 
-- Private repository created under the verified `sahamo123` account and pushed successfully: https://github.com/sahamo123/daxable-marketing-search-skills
-- Implementation commit `a2a8269aa4c803ac396f95db3974a2ef244edaf1`: [GitHub validation run 41290296157](https://github.com/sahamo123/daxable-marketing-search-skills/actions/runs/41290296157) completed successfully, including package validation and all 18 unit tests.
+- Private repository created under the verified `sahamo123` account and pushed successfully: https://github.com/sahamo123/dax-reach
+- Implementation commit `a2a8269aa4c803ac396f95db3974a2ef244edaf1`: [GitHub validation run 41290296157](https://github.com/sahamo123/dax-reach/actions/runs/41290296157) completed successfully, including package validation and all 18 unit tests.
 - Bootstrap/first evidence-recording runs failed before completion: the workflow-only bootstrap lacked the package, and the initial link checker treated the article's website URL as a repository path. Both causes were resolved; the latter has a regression test. See [GP-001](gotchas-and-pitfalls/GP-001-bootstrap-and-artifact-validation.md).
 - No website deployment, global agent installation, paid API setup, or credentials were added.
 

@@ -1,89 +1,86 @@
-# Daxable Marketing Search Skills
+# DaxReach AI Visibility Pack
 
-A portable marketing, content, conversion, SEO, and AI visibility skill. It combines selected workflows from **Corey Haines' Marketing Skills** and **AgriciDaniel's claude-seo**, reconciled with official Google guidance reviewed **November 1, 2026**.
+**Dax Reach** is a portable pack for **design, marketing, copy, content, conversion, SEO, GEO, and AEO**. It combines selected licensed workflows from Corey Haines' Marketing Skills, AgriciDaniel's claude-seo, and Impeccable, reconciles search guidance with Google's official documentation, and uses MADR for consequential decisions.
 
-This is a curated derivative with an explicit evidence standard, not a full union of both toolkits. It is independent of and not endorsed by the upstream authors, Google, Anthropic, or OpenAI. Improved organization and portability are engineering goals; better rankings, leads, or model outputs have not been established by a comparative outcome benchmark.
+One entry point loads only the references a task needs. The knowledge library also uses **Google Cloud's Open Knowledge Format (OKF) v0.2**. No model, paid subscription, runtime dependency, or background service is required. Optional Python helpers use Python 3.10+ and the standard library.
 
-## Included workflows
+This is the reusable public package. Company-specific internal skills, project rules, business facts, customer data, and credentials stay in their private projects. The installer never copies them into this repository. Public license and author attribution is retained.
 
-| Workflow | Delivers |
+## What is included
+
+| Module | Outcome |
 |---|---|
-| Strategy | Audience/offer map, service hierarchy, content priorities |
-| Technical SEO | Evidence-backed crawl, index, render, metadata, and experience findings |
-| Content | Article briefs, drafts, refreshes, source and quality review |
-| Copy | Headlines, benefits, service/landing-page copy, editing |
-| Conversion | CTA hierarchy, objections, trust, forms, experiments |
-| AI visibility | Platform-specific access, citations, brand accuracy, measurement plan |
-| Schema | Fact-matched structured data and explicit validation scope |
-| Measurement | Search-to-lead diagnosis and reproducible comparisons |
+| Design and motion | Impeccable-derived hierarchy, typography, responsive UX, accessible animation, and polish |
+| Strategy and conversion | Audience/offer architecture, CTAs, proof, forms, and experiments |
+| Copy and content | Headlines, landing pages, article briefs, complete drafts, and refreshes |
+| Technical SEO and schema | Crawl/render/index evidence, metadata, internal links, and fact-matched structured data |
+| GEO / AEO / AI visibility | Clear answers, accurate entities, engine-specific access, citations, and repeatable measurement |
+| Backlinks | Offline CSV analysis and saved-HTML verification; optional DataForSEO summary/link queries |
+| Free tools | Guidance for Search Console exports, Lychee, and SEOnaut; costs and limits distinguished |
+| Decisions | MADR-derived alternatives, evidence, consequences, reversible tests, and revisit criteria |
 
-The [active skill](skills/daxable-marketing-search/SKILL.md) loads only the references needed. No paid API, model-specific orchestration, automatic hooks, telemetry, or runtime package dependencies are required. Optional Python helpers use the standard library.
+[Start with the skill](skills/dax-reach/SKILL.md) or browse the [OKF knowledge index](skills/dax-reach/references/index.md). Impeccable's full engine, detector binary, hooks, and command suite are not bundled. Its selected design workflows are adapted into this pack with attribution.
 
-## Install in a project
-
-Clone this repository using your authorized GitHub access, then run from its root. Python 3.10+ is needed only for the installer and helpers.
+## Install
 
 ```bash
-git clone https://github.com/sahamo123/daxable-marketing-search-skills.git
-cd daxable-marketing-search-skills
+git clone https://github.com/sahamo123/dax-reach.git
+cd dax-reach
 
-# Inspect the destination without writing anything
-python3 scripts/install.py --agent codex --project /absolute/path/to/project
+# Detect the host, ask for broad industry and service/product type; dry-run
+python3 scripts/install.py --project /absolute/path/to/your-project
 
-# Install the self-contained package for Codex
-python3 scripts/install.py --agent codex --project /absolute/path/to/project --apply
-
-# Or install for Claude Code
-python3 scripts/install.py --agent claude --project /absolute/path/to/project --apply
-
-# Or create a portable folder for another agent
-python3 scripts/install.py --agent portable --project /absolute/path/to/project --apply
+# Explicit, reproducible installation
+python3 scripts/install.py --project /absolute/path/to/your-project \
+  --agent codex --industry "Software" --business-type product --apply
 ```
 
-| Host | Project destination | Invocation |
+| Host | Project destination | Invocation after reloading the host |
 |---|---|---|
-| Codex | `.agents/skills/daxable-marketing-search/` | `$daxable-marketing-search` or a matching task |
-| Claude Code | `.claude/skills/daxable-marketing-search/` | `/daxable-marketing-search` or a matching task |
-| Other Agent Skills host | `skills/daxable-marketing-search/` using portable mode | Configure the host to load the folder |
-| Chat interface without skill loading | Read/paste SKILL.md plus the relevant reference files | Explicitly provide the context and desired task |
+| Codex | `.agents/skills/dax-reach/` | `$dax-reach` |
+| Claude Code | `.claude/skills/dax-reach/` | `/dax-reach` |
+| Google Antigravity | `.agents/skills/dax-reach/` | Select/invoke Dax Reach in the host |
+| Cursor | `.cursor/skills/dax-reach/` | `/dax-reach` |
+| Grok Build | `.grok/skills/dax-reach/` | `/dax-reach` |
+| Other hosts | `skills/dax-reach/` via `--agent portable` | Configure the host or provide SKILL.md and relevant references |
 
-The installer preserves existing AGENTS.md, CLAUDE.md, settings, and skills. A different existing installation causes a refusal rather than an overwrite. For updates, review the diff and back up/remove that package directory explicitly, then reinstall. For uninstall, remove only the installed `daxable-marketing-search` directory.
+Choose the **host**, not the underlying model: Grok running inside Cursor uses the Cursor destination. Detection uses project markers and a few session indicators; ambiguous/unknown environments require a selection. Noninteractive installs accept explicit flags. See [installation details](Docs/installation.md).
 
-Manual installation: copy the entire active skill folder, including references and licenses, to the appropriate destination. Do not install the archival upstream directory. If a host caches its skill list, reload its session. A plain LLM can use the instructions but cannot gain browsing or execution tools merely from reading them.
+The installer scans standard project, ancestor, and user skill folders, plus optional `--extra-skill-root` paths. Duplicate/legacy identities and incomplete scans block installation. Related workflows such as Impeccable or copywriting are reported separately; `--allow-overlap` acknowledges coexistence without bypassing duplicate protection. Existing settings and divergent installed copies are never overwritten.
 
-## Examples
+Your broad industry and business type generate a local `local-context/profile.json` inside the installed skill. That directory contains its own Git exclusion. Do not put secrets in the labels or force-add private context. The source pack cannot be installed into itself and refuses source files flagged as private/sensitive. For updates, review and back up the installed copy, then explicitly remove only that copy before reinstalling.
+
+## Use
 
 ```text
-Use daxable-marketing-search to review this local homepage for service clarity,
-qualified leads, and search visibility. Keep changes local. Preserve offers.
+Use Dax Reach to refresh this homepage's hierarchy and motion while preserving
+its approved content, accessibility, working forms, and publication boundary.
 ```
 
 ```text
-Use daxable-marketing-search to write a source-backed article from this brief.
-Use our approved facts; mark missing evidence instead of inventing it.
+Use Dax Reach to create a source-backed product comparison and article brief.
+Distinguish verified features from claims still needing evidence.
 ```
 
 ```text
-Use daxable-marketing-search to diagnose this lead decline from the attached
-analytics exports. Separate observations from hypotheses and tracking gaps.
+Use Dax Reach to analyze this supplied backlink export and recommend the next
+three actions. Explain coverage limits and the evidence for each decision.
 ```
 
-## Verification and limits
+See [backlink and DataForSEO usage](Docs/backlinks-and-dataforseo.md). DataForSEO is optional and paid: credentials are read from local environment variables, never passed as CLI arguments or committed. The adapter makes no network request unless `--execute-paid` is explicitly supplied. Tests use mocked responses and no paid account.
+
+## Verify and maintain
 
 ```bash
 python3 scripts/validate.py
 python3 -m unittest discover -s tests -v
-python3 skills/daxable-marketing-search/scripts/inspect_html.py tests/fixtures/example.html
+python3 scripts/check_public.py --history
 ```
 
-Read [verification results](Docs/verification.md) for what actually ran. Installation layout tests are not proof of runtime behavior in every agent. [Behavior cases](evals/README.md) define a repeatable quality comparison without inventing a benchmark score. The offline HTML helper only extracts evidence from a local file; it does not crawl, render JavaScript, or establish rich-result eligibility.
+Read [verification](Docs/verification.md), [public/private separation](Docs/public-release.md), [OKF format notes](Docs/knowledge-format.md), and [maintenance](Docs/maintenance.md). Source snapshots are pinned and hash-checked in [upstream.lock.json](upstream.lock.json). Historical evaluation records retain the original name so the evidence is not rewritten as a test of the new version.
 
-## Sources, maintenance, and licenses
+The pack improves packaging, workflow coverage, evidence handling, and installation safeguards. Better rankings, citations, conversions, or model output quality require actual comparative measurement; no superiority benchmark is claimed. Native host execution is distinct from installer testing.
 
-- [Upstream lock](upstream.lock.json): exact source versions and hashes.
-- [Merge decisions](skills/daxable-marketing-search/references/merge-decisions.md): retained, changed, and excluded behavior.
-- [Google guidance](skills/daxable-marketing-search/references/google-guidance.md): dated rules and a documented reporting conflict.
-- [Maintenance](Docs/maintenance.md): review updates without automatically importing upstream instructions.
-- [Attribution](skills/daxable-marketing-search/NOTICE.md): original authors and licenses, included in every installation.
+## License and credit
 
-Original additions and MIT-derived workflows are MIT licensed. Google-derived documentation notes retain CC BY 4.0 attribution. Upstream MIT notices are preserved verbatim. Repository visibility is private initially; access is managed through GitHub, not by the license.
+Original additions and MIT-derived workflows use MIT. Impeccable-derived design/motion uses Apache-2.0. Google-derived documentation notes use CC BY 4.0 where applicable. Preserve the [full notices and licenses](skills/dax-reach/NOTICE.md). The project is independent and is not endorsed by Google, upstream authors, or model/tool providers.

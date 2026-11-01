@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import shutil
 import tempfile
@@ -15,14 +16,21 @@ def load(name, path):
 
 
 installer = load('installer', 'scripts/install.py')
-inspector = load('inspector', 'skills/daxable-marketing-search/scripts/inspect_html.py')
+inspector = load('inspector', 'skills/dax-reach/scripts/inspect_html.py')
 validator = load('validator', 'scripts/validate.py')
 
 
 class InstallationTests(unittest.TestCase):
+    def setUp(self):
+        self.home = tempfile.TemporaryDirectory()
+        self.addCleanup(self.home.cleanup)
+
+    def install(self, *args, **kwargs):
+        return installer.install(*args, industry='Example services', business_type='service', home=Path(self.home.name), **kwargs)
+
     def test_dry_run_does_not_write(self):
         with tempfile.TemporaryDirectory() as path:
-            result = installer.install(path, 'codex')
+            result = self.install(path, 'codex')
             self.assertEqual(result['status'], 'dry-run')
             self.assertEqual(list(Path(path).iterdir()), [])
 
@@ -32,35 +40,40 @@ class InstallationTests(unittest.TestCase):
                 root = Path(path)
                 (root / 'AGENTS.md').write_text('Existing project instructions')
                 (root / 'CLAUDE.md').write_text('Existing Claude instructions')
-                result = installer.install(path, agent, True)
+                result = self.install(path, agent, True)
                 destination = root / location / installer.SOURCE.name
                 self.assertEqual(Path(result['destination']), destination)
-                self.assertEqual(installer.inventory(destination), installer.inventory(installer.SOURCE))
+                actual = installer.inventory(destination)
+                actual.pop(installer.PROFILE_PATH)
+                self.assertEqual(actual, installer.inventory(installer.SOURCE))
+                profile = json.loads((destination / installer.PROFILE_PATH).read_text())
+                self.assertEqual(profile['industry'], 'Example services')
+                self.assertEqual(profile['business_type'], 'service')
                 self.assertEqual((root / 'AGENTS.md').read_text(), 'Existing project instructions')
                 self.assertEqual((root / 'CLAUDE.md').read_text(), 'Existing Claude instructions')
                 self.assertFalse((destination / 'upstream').exists())
-                self.assertEqual(installer.install(path, agent, True)['status'], 'unchanged')
+                self.assertEqual(self.install(path, agent, True)['status'], 'unchanged')
 
     def test_existing_customization_is_preserved(self):
         with tempfile.TemporaryDirectory() as path:
-            result = installer.install(path, 'codex', True)
+            result = self.install(path, 'codex', True)
             skill = Path(result['destination']) / 'SKILL.md'
             skill.write_text('User customization')
             with self.assertRaises(ValueError):
-                installer.install(path, 'codex', True)
+                self.install(path, 'codex', True)
             self.assertEqual(skill.read_text(), 'User customization')
 
     def test_symlink_escape_refused(self):
         with tempfile.TemporaryDirectory() as path, tempfile.TemporaryDirectory() as outside:
             (Path(path) / '.agents').symlink_to(outside, target_is_directory=True)
             with self.assertRaises(ValueError):
-                installer.install(path, 'codex', True)
+                self.install(path, 'codex', True)
             self.assertEqual(list(Path(outside).iterdir()), [])
 
     def test_missing_project_refused(self):
         with tempfile.TemporaryDirectory() as path:
             with self.assertRaises(ValueError):
-                installer.install(Path(path) / 'absent', 'claude', True)
+                self.install(Path(path) / 'absent', 'claude', True)
 
 
 class HtmlEvidenceTests(unittest.TestCase):
@@ -143,7 +156,7 @@ class PackageTests(unittest.TestCase):
             result.write_text('[Example website destination](/services/example/)')
             errors, _ = validator.validate(root)
             self.assertEqual(errors, [])
-            entry = root / 'skills/daxable-marketing-search/SKILL.md'
+            entry = root / 'skills/dax-reach/SKILL.md'
             entry.write_text(entry.read_text() + '\n[Broken reference](absent.md)\n')
             errors, _ = validator.validate(root)
             self.assertTrue(any('absent.md' in error for error in errors))

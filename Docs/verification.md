@@ -18,7 +18,11 @@ This was one offline consumer task using the inherited agent configuration. It w
 
 ## Release verification
 
-Implementation is ready for reviewed GitHub delivery. Public repository visibility and final CI results are recorded after those actions complete.
+- [Implementation PR #1](https://github.com/sahamo123/dax-reach/pull/1) merged as `f923920641931c623a73ee9e8b32c3bcbf2b5f48` after review and successful checks on head `e6a5abd87f748d7008889e5e59b93303445586fb`.
+- [Push CI 41293521396](https://github.com/sahamo123/dax-reach/actions/runs/41293521396) and [PR CI 41293543408](https://github.com/sahamo123/dax-reach/actions/runs/41293543408) passed package validation and all 57 tests.
+- Repository renamed to [sahamo123/dax-reach](https://github.com/sahamo123/dax-reach). GitHub metadata reports public visibility; unauthenticated API and raw README requests succeeded on 2026-11-01.
+- GitHub secret scanning and secret-scanning push protection are enabled. These supplement the source/history review and do not certify that arbitrary prose contains no confidential information.
+- The full-history scan was repeated after the implementation commit: 212 current files/historical blobs checked, with no sensitive-pattern findings. The inspected release had no private attachments or uploaded workflow artifacts. The actual DataForSEO credential remains outside this repository.
 
 ## Limits
 

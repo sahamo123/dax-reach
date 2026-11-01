@@ -1,6 +1,6 @@
 # IP-002 — Dax Reach Public Package
 
-Date: 2026-11-01. Agent: Codex. Status: Implementation verified; GitHub release pending.
+Date: 2026-11-01. Agent: Codex. Status: Delivered; public visibility and anonymous access verified.
 
 ## Goal
 

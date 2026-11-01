@@ -13,9 +13,9 @@ Source: [IP-001](implementation-plans/IP-001-portable-marketing-search.md)
 - [x] 🤖 Codex: IP-002 implementation — Dax Reach rename, environment-aware installer, business profiles, conflict checks, privacy separation, and OKF knowledge bundle.
 - [x] 🤖 Codex: Integrate selected Impeccable design/motion, MADR decisions, backlink evidence tools, and optional DataForSEO adapter with local credentials.
 - [x] 🤖 Codex: Complete 57 tests, source/license/privacy checks, and independent offline behavior review.
-- [/] 🤖 Codex: Deliver reviewed PR with passing CI, rename the GitHub repository, and verify public visibility.
+- [x] 🤖 Codex: Deliver reviewed PR #1 with passing CI, rename to `sahamo123/dax-reach`, and verify public visibility plus unauthenticated repository/README access.
 
 | ID | Plan | Status | Created |
 |---|---|---|---|
 | IP-001 | Portable marketing and search skills | Delivered | 2026-11-01 |
-| IP-002 | Dax Reach public package | Ready for release | 2026-11-01 |
+| IP-002 | Dax Reach public package | Delivered | 2026-11-01 |

@@ -15,3 +15,5 @@ The former company-named marketing skill becomes Dax Reach, a reusable design, m
 Validation: 57 tests passed, package/source/OKF and Skill Creator checks passed, public-history scan and manual review completed. One independent offline consumer task completed. Native host runtimes and paid API access were not exercised. See [verification](../verification.md) for scope and release evidence.
 
 Released through [PR #1](https://github.com/sahamo123/dax-reach/pull/1) with passing push/PR CI. The repository is now public as `sahamo123/dax-reach`; anonymous repository and README access were verified. Historical version 0.1 records describe the original private delivery, not the current visibility.
+
+GitHub secret scanning and push protection were enabled and verified for future pushes.
